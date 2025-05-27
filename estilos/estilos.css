@@ -1,0 +1,133 @@
+.HeaderContainer {
+  background-image: url("../img/headerBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  padding: 20px; /* Espaciado interno */
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px black;
+
+  /* Quitamos centrado */
+  display: block;
+}
+.links-toggle h2 {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  transition: color 0.3s ease;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.links-toggle h2:hover {
+  color: #007bff;
+}
+
+#links-list.hidden {
+  display: none;
+}
+
+#links-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.seccion-decorada {
+  position: relative;
+  background-color: #f1f1f1; 
+}
+
+.decoracion-img {
+  position: absolute;
+  top: 80px;       
+  left: 20px;
+  width: 120px;    
+  opacity: 0.8;    
+  z-index: 0;     
+  pointer-events: none; 
+}
+
+
+.Precioproducto{
+    color: green;
+}
+.PrecioDescuento{
+    color: red;
+}
+.titulo-central {
+  position: absolute;
+  top: 35%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1; 
+  width: 100%;}
+
+  body {
+  background-color: #121212; 
+  color: #f5f5f5; 
+}
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  background: url('../img/headerbackground.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  max-width: 300px;
+}
+.navbar-brand img {
+  vertical-align: middle;
+}
+.navbar-background {
+  background-image: url('../img/logo\ \(2\).png'); 
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 60px; 
+}
+
+.titulo-animado {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 1.2s ease-out forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
