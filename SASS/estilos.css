@@ -83,7 +83,7 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 
 .card {
@@ -168,11 +168,11 @@ body {
 }
 
 @keyframes fadeInOut {
-  0% {
+  100% {
     opacity: 0;
     transform: translateY(-10px);
   }
-  20% {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -194,7 +194,7 @@ body {
 }
 
 body {
-  background-color: #121212;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
@@ -204,7 +204,7 @@ h2 {
 }
 
 .tarjeta-descuento {
-  background-color: #1e1e1e;
+  background-color: #000000;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -232,45 +232,66 @@ h2 {
 }
 .tarjeta-descuento p span.text-danger {
   margin-left: 10px;
-}
-
+}/*# sourceMappingURL=estilos.css.map */
 .pagina-descuentos {
   background-color: #1f1f1f;
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
 .pagina-descuentos .navbar {
-  background-color: #121212 !important;
+  background-color: #000000 !important;
 }
-.pagina-descuentos h1, .pagina-descuentos h2, .pagina-descuentos h5, .pagina-descuentos p {
+
+.pagina-descuentos h1,
+.pagina-descuentos h2,
+.pagina-descuentos h5,
+.pagina-descuentos p {
   color: white;
 }
+
 .pagina-descuentos .text-danger {
   color: #ff4d4d !important;
 }
+
 .pagina-descuentos .producto-img {
   border: 2px solid white;
 }
-
-.pagina-nuevosproductos {
-  background-color: #1e1e1e;
-  color: #ffffff;
-}
-.pagina-nuevosproductos .navbar {
-  background-color: #000 !important;
-}
-.pagina-nuevosproductos .navbar .nav-link,
-.pagina-nuevosproductos .navbar .navbar-brand {
+.pagina-descuentos .navbar-nav .nav-link {
   color: white !important;
 }
-.pagina-nuevosproductos .navbar .nav-link.active {
-  color: #00aaff !important;
+
+.pagina-descuentos .navbar-brand {
+  color: white !important;
 }
-.pagina-nuevosproductos h1, .pagina-nuevosproductos h2, .pagina-nuevosproductos h5, .pagina-nuevosproductos p {
-  color: white;
+
+.pagina-descuentos .nav-link.active {
+  color: #ffffff !important; /* color para el enlace activo */
 }
-.pagina-nuevosproductos .tarjeta-descuento {
-  background-color: #000;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}/*# sourceMappingURL=estilos.css.map */
+.pagina-nuevosproductos {
+  background-color: #1e1e1e; / gris oscuro
+  color: #ffffff; 
+
+  .navbar {
+    background-color: #000 !important;
+
+    .nav-link,
+    .navbar-brand {
+      color: white !important;
+    }
+
+    .nav-link.active {
+      color: #00aaff !important;
+    }
+  }
+
+  h1, h2, h5, p {
+    color: white;
+  }
+
+  .tarjeta-descuento {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+}

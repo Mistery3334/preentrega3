@@ -1,0 +1,18 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/estilos"
+    }
+  ],
+  "liveSassCompile.settings.includeItems": [
+    "/SASS/estilos.scss"
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
+  ],
+  "liveSassCompile.settings.generateMap": true
+}
+
